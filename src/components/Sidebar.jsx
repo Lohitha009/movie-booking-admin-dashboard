@@ -4,7 +4,8 @@ import {
   BarChart3,
   CalendarDays,
   KanbanSquare,
-  Users
+  Users,
+  Film
 } from "lucide-react";
 
 const MENU_ITEMS = [
@@ -12,13 +13,14 @@ const MENU_ITEMS = [
   { label: "Analytics", path: "/analytics", icon: BarChart3 },
   { label: "Calendar", path: "/calendar", icon: CalendarDays },
   { label: "Kanban", path: "/kanban", icon: KanbanSquare },
+  { label: "Movies", path: "/movies", icon: Film },   // ✅ ADDED
   { label: "Users", path: "/users", icon: Users }
 ];
 
 export default function Sidebar() {
   return (
     <aside className="w-64 min-h-screen bg-gray-900 text-gray-300 flex flex-col">
-      
+
       {/* Logo / Brand */}
       <div className="px-6 py-5 text-2xl font-bold text-white tracking-wide border-b border-gray-800">
         🎬 MovieBooking

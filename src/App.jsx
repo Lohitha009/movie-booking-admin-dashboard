@@ -8,18 +8,19 @@ import Analytics from "./pages/Analytics";
 import CalendarPage from "./pages/CalendarPage";
 import KanbanPage from "./pages/KanbanPage";
 import Users from "./pages/Users";
+import Movies from "./pages/Movies";   // ✅ ADD THIS
 
 export default function App() {
   return (
     <BrowserRouter>
       <div className="flex min-h-screen bg-gray-100 dark:bg-gray-900">
-        
+
         {/* Sidebar */}
         <Sidebar />
 
         {/* Main Content */}
         <div className="flex-1 flex flex-col">
-          
+
           {/* Topbar */}
           <Topbar />
 
@@ -31,6 +32,7 @@ export default function App() {
               <Route path="/calendar" element={<CalendarPage />} />
               <Route path="/kanban" element={<KanbanPage />} />
               <Route path="/users" element={<Users />} />
+              <Route path="/movies" element={<Movies />} /> {/* ✅ ADD THIS */}
             </Routes>
           </main>
 
